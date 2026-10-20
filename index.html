@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>P3 - Navbar amb Bootstrap</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Barra de navegació -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+
+            <a class="navbar-brand" href="#inici">El meu projecte</a>
+
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menuPrincipal"
+                aria-controls="menuPrincipal"
+                aria-expanded="false"
+                aria-label="Obrir o tancar el menú">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#inici">Inici</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projectes">Projectes</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacte">Contacte</a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Capçalera -->
+    <header id="inici" class="bg-primary text-white text-center p-4">
+        <h1>Benvinguts al meu projecte</h1>
+        <p class="mb-0">Descobreix la natura, la tecnologia i els viatges.</p>
+    </header>
+
+    <!-- Contingut principal -->
+    <main id="projectes" class="container my-4">
+
+        <div class="row">
+
+            <!-- Card 1: Natura -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card m-3 shadow-sm h-100">
+
+                    <img src="img/natura.jpg"
+                        class="card-img-top"
+                        alt="Paisatge de natura">
+
+                    <div class="card-body">
+                        <h2 class="card-title h5">La natura</h2>
+
+                        <p class="card-text">
+                            La natura ens ofereix paisatges increïbles
+                            i ens ajuda a desconnectar de la rutina.
+                        </p>
+
+                        <a href="#contacte" class="btn btn-primary">
+                            Més informació
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Card 2: Tecnologia -->
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card m-3 shadow-sm h-100">
+
+                    <img src="img/tecnologia.jpg"
+                        class="card-img-top"
+                        alt="Imatge de tecnologia">
+
+                    <div class="card-body">
+                        <h2 class="card-title h5">La tecnologia</h2>
+
+                        <p class="card-text">
+                            La tecnologia ens permet comunicar-nos,
+                            aprendre i resoldre problemes cada dia.
+                        </p>
+
+                        <a href="#contacte" class="btn btn-primary">
+                            Més informació
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Card 3: Viatges -->
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card m-3 shadow-sm h-100">
+
+                    <img src="img/viatges.jpg"
+                        class="card-img-top"
+                        alt="Paisatge de viatges">
+
+                    <div class="card-body">
+                        <h2 class="card-title h5">Els viatges</h2>
+
+                        <p class="card-text">
+                            Viatjar ens permet descobrir nous llocs,
+                            conèixer cultures i viure experiències.
+                        </p>
+
+                        <a href="#contacte" class="btn btn-primary">
+                            Més informació
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- Peu de pàgina -->
+    <footer id="contacte" class="bg-dark text-white text-center p-4 mt-4">
+        <p class="mb-0">2026 Institut Barres i Ones | Pràctica Bootstrap</p>
+    </footer>
+
+    <!-- JavaScript de Bootstrap per al menú hamburguesa -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
